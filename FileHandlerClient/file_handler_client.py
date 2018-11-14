@@ -1,17 +1,16 @@
 import json
-import time
-import requests
 import random
+import requests
 import string
 import sys
+import time
 
 from base64 import b64encode, b64decode
+from config import FILE_DISTRIBUTOR_ADDRESS
 from Crypto.Cipher import PKCS1_v1_5
 from Crypto.PublicKey import RSA
 from os import chmod
 from pyDes import des, PAD_PKCS5
-
-from config import FILE_DISTRIBUTOR_ADDRESS
 
 
 class FileHandlerClient(object):
